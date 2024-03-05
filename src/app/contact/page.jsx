@@ -1,8 +1,8 @@
-
+import styles from './Contact.module.css'
 
 const ContactPage = () => {
     return (
-        <div>
+        <div className={styles.heading}>
             this is contact page
         </div>
     );

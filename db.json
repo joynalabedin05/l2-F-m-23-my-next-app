@@ -1,0 +1,40 @@
+{
+    "shoes": [
+        {
+          "id": "1",
+          "title": "Men's Running Shoes",
+          "description": "Lightweight and durable running shoes designed for optimal performance.",
+          "price": 95.99
+        },
+        {
+          "id": "2",
+          "title": "Women's Training Shoes",
+          "description": "Versatile training shoes suitable for gym workouts, cross-training, and more.",
+          "price": 79.99
+        },
+        {
+          "id": "3",
+          "title": "Unisex Sneakers",
+          "description": "Classic sneakers with a modern twist, perfect for everyday wear.",
+          "price": 64.99
+        },
+        {
+          "id": "4",
+          "title": "Kid's Sports Shoes",
+          "description": "Comfortable and supportive shoes designed for active children.",
+          "price": 49.99
+        },
+        {
+          "id": "5",
+          "title": "Men's Dress Shoes",
+          "description": "Elegant and stylish dress shoes suitable for formal occasions.",
+          "price": 109.99
+        },
+        {
+          "id": "6",
+          "title": "Women's Sandals",
+          "description": "Fashionable and comfortable sandals perfect for summer outings.",
+          "price": 39.99
+        }
+      ]
+    }      

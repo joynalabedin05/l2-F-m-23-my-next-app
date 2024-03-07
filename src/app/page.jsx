@@ -1,5 +1,7 @@
 // "use client"
 
+import Link from "next/link";
+
 // import Counter from "@/components/counter/Counter";
 export const metadata = {
   title: "home page",
@@ -17,13 +19,14 @@ const HomePage = async() => {
   });
   const shoes =await res.json();
   // console.log(data);
+  // throw new Error("error from homepage");
   return (
-    <div className="m-10">
+    <div className="m-10 text-center">
       <h1 className='text-3xl'>hellow next js</h1>      
       {/* <Counter></Counter> */}
-      <div className="grid grid-cols-3 gap-10 p-5">
+      <div className="grid grid-cols-3 gap-10 p-5 mb-5">
         {
-          shoes.map(shoe=><div key={shoe.id} className="card card-compact bg-base-100 shadow-xl">
+          shoes.slice(0,3).map(shoe=><div key={shoe.id} className="card card-compact bg-base-100 shadow-xl">
           <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
           <div className="card-body">
           <h2 className="card-title">
@@ -40,6 +43,10 @@ const HomePage = async() => {
         </div>)
         }
       </div>
+      <Link className="" href="/all-shoes">
+          <button className="btn btn-outline btn-primary">See more</button>
+      </Link>
+      
     </div>
   );
 };
